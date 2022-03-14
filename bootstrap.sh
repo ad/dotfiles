@@ -9,13 +9,13 @@ else
 fi
 
 # Git
-rm ~/.gitconfig ~/.gitignore_global 
+rm -rf ~/.gitconfig ~/.gitignore_global 
 ln -s $PWD/.gitconfig ~/.gitconfig
 ln -s $PWD/.gitignore_global ~/.gitignore_global
 
 # Install Brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-rm ~/.zprofile
+rm -rf ~/.zprofile
 ln -s $PWD/.zprofile ~/.zprofile
 
 export PATH=/opt/homebrew/bin:$PATH
@@ -30,11 +30,12 @@ brew bundle
 brew cleanup
 
 # Linking dotfiles to home directory
-rm ~/.zshrc
+rm -rf ~/.zshrc
 ln -s $PWD/.zshrc ~/.zshrc
 
-rm ~/.nanorc
+rm -rf ~/.nanorc
 ln -s $PWD/.nanorc ~/.nanorc
 
-mkdir ~/.config
+rm -rf ~/.config/starship.toml
+mkdir -p ~/.config
 ln -s $PWD/.config/starship.toml ~/.config/starship.toml
