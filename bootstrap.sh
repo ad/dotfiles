@@ -39,3 +39,5 @@ ln -s $PWD/.nanorc ~/.nanorc
 rm -rf ~/.config/starship.toml
 mkdir -p ~/.config
 ln -s $PWD/.config/starship.toml ~/.config/starship.toml
+
+source ~/.zshrc
