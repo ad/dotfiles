@@ -27,9 +27,11 @@ compaudit | xargs chmod g-w
 | Command | Action |
 | ------- | ------ |
 | myip | dig +short myip.opendns.com @resolver1.opendns.com |
+| ip | list of ip |
 | ll | ls -lah --color |
 | nano | nano --autoindent --mouse --linenumbers --nowrap --minibar |
 | take |  mkdir+cd, git clone+cd, download+untar+cd |
+| urlencode | urlencode string |
 
 
 ## Result

@@ -1,7 +1,8 @@
 DOCKER_SCAN_SUGGEST=false
-HOMEBREW_NO_ANALYTICS=1
 ZSH_DISABLE_COMPFIX=true
-LSCOLORS=ExFxBxDxCxegedabagacad
+
+export HOMEBREW_NO_ANALYTICS=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
 eval "$(starship init zsh)"
 
