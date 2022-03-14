@@ -24,3 +24,10 @@ Then edit .gitconfig file.
 | ll | ls -lah --color |
 | nano | nano --autoindent --mouse --linenumbers --nowrap --minibar |
 | take |  mkdir+cd, git clone+cd, download+untar+cd |
+
+
+### if you see error 'zsh compinit: insecure directories, run compaudit for list.'
+
+```
+compaudit | xargs chmod g-w
+```
