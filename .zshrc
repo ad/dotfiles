@@ -1,4 +1,7 @@
 DOCKER_SCAN_SUGGEST=false
+HOMEBREW_NO_ANALYTICS=1
+ZSH_DISABLE_COMPFIX=true
+LSCOLORS=ExFxBxDxCxegedabagacad
 
 eval "$(starship init zsh)"
 
@@ -6,8 +9,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
-
-export LSCOLORS=ExFxBxDxCxegedabagacad
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -26,6 +27,8 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ll="ls -lah --color"
 alias nano="nano --autoindent --mouse --linenumbers --nowrap --minibar"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 
 # mkcd is equivalent to takedir
