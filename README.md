@@ -16,12 +16,6 @@ Then edit .gitconfig file.
 - Install homebrew package manager and with his help all software that defined in a Brewfile
 - Make symlinks to Git configuration files and Zsh profile
 
-### if you see error 'zsh compinit: insecure directories, run compaudit for list.'
-
-```
-compaudit | xargs chmod g-w
-```
-
 ## Adds commands
 
 | Command | Action |
