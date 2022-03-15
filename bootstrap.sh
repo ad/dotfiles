@@ -40,4 +40,9 @@ rm -rf ~/.config/starship.toml
 mkdir -p ~/.config
 ln -s $PWD/.config/starship.toml ~/.config/starship.toml
 
+etc=/Applications/Docker.app/Contents/Resources/etc
+sudo mkdir -p /usr/local/share/zsh/site-function
+sudo ln -s $etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
+sudo ln -s $etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
+
 source ~/.zshrc

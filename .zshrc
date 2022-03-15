@@ -22,10 +22,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-etc=/Applications/Docker.app/Contents/Resources/etc
-ln -s $etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
-ln -s $etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
-
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ll="ls -lah --color"
 alias nano="nano --autoindent --mouse --linenumbers --nowrap --minibar"
