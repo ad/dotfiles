@@ -8,6 +8,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = nano
+	fsmonitor = true
 [init]
 	defaultBranch = main
 [push]
