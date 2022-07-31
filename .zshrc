@@ -4,6 +4,15 @@ ZSH_DISABLE_COMPFIX=true
 export HOMEBREW_NO_ANALYTICS=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
+# HISTORY
+setopt EXTENDED_HISTORY   # enable more detailed history (time, command, etc.)   
+setopt SHARE_HISTORY      # share history across multiple zsh sessions
+setopt APPEND_HISTORY     # append to history
+setopt INC_APPEND_HISTORY # adds commands as they are typed, not at shell exit
+setopt HIST_VERIFY        # let you edit !$, !! and !* before executing the command
+setopt HIST_IGNORE_DUPS   # do not store duplications
+setopt HIST_REDUCE_BLANKS # removes blank lines from history
+
 eval "$(starship init zsh)"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
