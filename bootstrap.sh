@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
-   test -d "${xpath}" && test -x "${xpath}" ; 
+   test -d "${xpath}" && test -x "${xpath}" ;
 then
    echo "Command Line Tools already Installed"
 else
@@ -9,7 +9,7 @@ else
 fi
 
 # Git
-rm -rf ~/.gitconfig ~/.gitignore_global 
+rm -rf ~/.gitconfig ~/.gitignore_global
 ln -s $PWD/.gitconfig ~/.gitconfig
 ln -s $PWD/.gitignore_global ~/.gitignore_global
 

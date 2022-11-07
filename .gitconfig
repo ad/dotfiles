@@ -1,7 +1,8 @@
 [user]
 	email = daniel@apatin.ru
 	name = Daniel Apatin
-[url "git@github.com:"]
+	signingkey = 5318C0DF
+[url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [help]
 	autocorrect = 1
@@ -12,7 +13,7 @@
 [init]
 	defaultBranch = main
 [push]
-        default = current
+	default = current
 [color]
 	ui = auto
 [color "branch"]
@@ -31,3 +32,7 @@
 	untracked = red bold
 [github]
 	user = ad
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true

@@ -16,6 +16,15 @@ Then edit .gitconfig file.
 - Install homebrew package manager and with his help all software that defined in a Brewfile
 - Make symlinks to Git configuration files and Zsh profile
 
+
+## macOS defaults
+
+You use it by running:
+
+```console
+sh ./macos-defaults.sh
+```
+
 ## Adds commands
 
 | Command | Action |
@@ -26,6 +35,7 @@ Then edit .gitconfig file.
 | nano | nano --autoindent --mouse --linenumbers --nowrap --minibar |
 | take |  mkdir+cd, git clone+cd, download+untar+cd |
 | urlencode | urlencode string |
+| afk | start screen saver |
 
 
 ## Result
