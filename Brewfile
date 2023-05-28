@@ -17,7 +17,7 @@ brew "starship"
 brew "watch"
 brew "wireguard-tools"
 brew "zsh-completions"
-brew "zsh-syntax-highlighting"=
+brew "zsh-syntax-highlighting"
 cask "docker"
 cask "font-fira-code"
 cask "font-hack-nerd-font"
