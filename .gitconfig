@@ -1,7 +1,6 @@
 [user]
 	email = daniel@apatin.ru
 	name = Daniel Apatin
-	signingkey = 5318C0DF
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 [help]
@@ -32,7 +31,3 @@
 	untracked = red bold
 [github]
 	user = ad
-[commit]
-	gpgSign = true
-[tag]
-	gpgSign = true
