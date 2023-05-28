@@ -1,8 +1,6 @@
 [user]
 	email = daniel@apatin.ru
 	name = Daniel Apatin
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
 [help]
 	autocorrect = 1
 [core]
