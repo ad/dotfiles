@@ -1,0 +1,32 @@
+// Zed settings
+// documentation: https://zed.dev/docs/configuring-zed
+{
+  "theme": "Ayu Mirage",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "features": {
+    "copilot": true
+  },
+  "ui_font_family": "PT Sans",
+  "ui_font_size": 18,
+  "buffer_font_family": "Fira Code",
+  "buffer_font_size": 13,
+  "buffer_font_features": {
+    "calt": true
+  },
+  "confirm_quit": true,
+  "assistant": {
+    "button": false
+  },
+  "tabs": {
+    "git_status": true,
+    "close_position": "right"
+  },
+  "preferred_line_length": 120,
+  "journal": {
+    "path": "~",
+    "hour_format": "hour24"
+  }
+}
