@@ -29,17 +29,18 @@
     "close_position": "right"
   },
   "inlay_hints": {
-    // Global switch to toggle hints on and off, switched off by default.
     "enabled": true,
-    // Toggle certain types of hints on and off, all switched on by default.
     "show_type_hints": true,
     "show_parameter_hints": true,
-    // Corresponds to null/None LSP hint type value.
     "show_other_hints": true
   },
   "preferred_line_length": 120,
   "journal": {
     "path": "~",
     "hour_format": "hour24"
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true
   }
 }
